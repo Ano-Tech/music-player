@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="assets\styles\style.css">
+  <link rel="stylesheet" href="assets\fontawesome-free-6.4.0-web\css\all.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Music Player</h1>
+        <div class="music-container">
+            <div id="cover-box">
+                <img id="cover" src="" alt="Album Cover">
+            </div>
+            <audio id="disc" src=""></audio>
+            <div id="music-info">
+                <h2 id="title"></h2>
+                <h3 id="artist"></h3>
+                <div id="progress-container">
+                    <div id="progress"></div>
+                </div>
+                <div id="timer-bar">
+                    <span id="timer">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+            <div id="control-box">
+                <button id="prev" class="btn"><i class="fas fa-step-backward"></i></button>
+                <button id="play" class="btn"><i class="fas fa-play"></i></button>
+                <button id="next" class="btn"><i class="fas fa-step-forward"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="playlist-container">
+        <ul id="playlist"></ul>
+        <input type="file" id="file-input" accept="audio/*" />
+
+    </div>
+    
+
+
+    <script src="assets\scripts\script.js"></script>
+    <script src="assets\fontawesome-free-6.4.0-web\js\all.js"></script>
+</body>
+</html>
